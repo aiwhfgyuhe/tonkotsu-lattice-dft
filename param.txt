@@ -1,0 +1,18 @@
+200 160 120        xsize ysize zsize
+  1   2   3        x_min y_min z_min
+ 50  51  53        x_max y_max z_max
+1.5                alpha [eps_ff]
+1.2                temperature  [1/k_B]
+1.0e-4             eps_converge, if ave ( (dens - dens_prev ) ** 2 ) < eps_converge ** 2, exit scf calculation. 
+1 2 2              boundary conditions (x, y, z)  bc = 1 : mirror,  bc = 2 : pbc
+.T.                input_density
+100                n_scf_loop_max
+###   activity [unit]    output_density {T or F)  ##
+  0.0010   .F.
+  0.0030   .F.
+  0.0040   .F.
+  0.0050   .F.
+  0.0100   .F.
+  0.0200   .T.
+  0.0300   .F.
+  0.0448   .T.
